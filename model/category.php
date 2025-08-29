@@ -1,4 +1,5 @@
 <?php
+
     function findAllCategory(): array
     {
         try {
@@ -10,5 +11,4 @@
             throw new Exception($e->getMessage());
         }
     }
-
 ?>

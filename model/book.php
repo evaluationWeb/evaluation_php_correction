@@ -1,5 +1,6 @@
 <?php
-    function saveBook(array $book) : void {
+
+    function saveBook(array $book): void {
         try {
             $request = "INSERT INTO book(title, description, author, publication_date, id_users, id_category)
             VALUE(?,?,?,?,?,?)";
@@ -16,7 +17,7 @@
         }
     }
 
-    function findAllBook(int $idUser) : array {
+    function findAllBook(int $idUser): array {
         try {
             $request = "SELECT b.id_book, b.title, b.description, b.publication_date, b.author, c.name, u.id_users FROM book AS b
             INNER JOIN category AS c ON b.id_category = c.id_category
