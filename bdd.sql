@@ -36,3 +36,6 @@ ALTER TABLE book
 ADD CONSTRAINT fk_completed_category
 FOREIGN KEY (id_category)
 REFERENCES category(id_category);
+
+-- ajout des categories
+INSERT INTO category(name) VALUES ("polar"), ("science fiction"), ("fantastique"), ("biopic");
