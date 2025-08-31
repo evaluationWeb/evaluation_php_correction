@@ -22,5 +22,5 @@ Remplacer les valeurs avec vos paramètres de BDD.
 ```txt
 # dans le navigateur internet saisir l'url suivante 
 http://localhost/correction
-NB : si le dossier qui contient celle-ci s'appele bien correction
+NB : si le dossier qui contient celle-ci s'appelle bien correction
 ```
