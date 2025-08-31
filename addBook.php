@@ -9,7 +9,7 @@ include "model/category.php";
 include "model/book.php";
 //Liste de category
 $categories = findAllCategory();
-//Appel de la méthode pour ajouter un compte
+//Appel de la méthode pour ajouter un livre (book)
 $message = addBook();
 //Méthode pour ajouter un livre en BDD
 function addBook(): string
@@ -42,6 +42,7 @@ function addBook(): string
             $book["author"] = $author;
             $book["category"] = $category;
             $book["idUser"] = $idUser;
+            //appel de la méthode pour ajouter un livre (book)
             saveBook($book);
             return "Le livre a été ajouté en BDD";
         } else {
