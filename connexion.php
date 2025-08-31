@@ -20,7 +20,7 @@ function connexion() {
             //test si le compte existe
             if (isUserExistByEmail($email)) {
                 //récupération du compte
-                $user = findUserByEmail($email, $password);
+                $user = findUserByEmail($email);
                 //Test si le password est valide
                 if (password_verify($password, $user["password"])) {
                     //Création de la session

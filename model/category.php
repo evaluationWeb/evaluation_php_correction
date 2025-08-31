@@ -1,5 +1,8 @@
 <?php
-
+    /**
+     * Méthode qui retourne la liste des category
+     * @return array retourne un tableu de category
+     */
     function findAllCategory(): array
     {
         try {

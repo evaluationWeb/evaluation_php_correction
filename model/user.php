@@ -1,5 +1,9 @@
 <?php
-
+    /**
+     * Méthode qui vérifie si un user existe en BDD avec son email
+     * @param email string email de l'utilisateur
+     * @return bool true si existe sion false
+     */
     function isUserExistByEmail(string $email): bool {
         try {
                 //Récupération de la valeur de name (category)
@@ -23,7 +27,11 @@
                 return false;
             }
     }
-
+        /**
+     * Méthode qui  ajoute un user en BDD
+     * @param array $user tableau de l'utilisateur
+     * @return void ne retrourne rien
+     */
     function saveUser(array $user): void {
         try {
                 //Récupération des données de l'utilisateur
@@ -47,8 +55,12 @@
                 throw new Exception($e->getMessage());
             }
     }
-
-    function findUserByEmail(string $email, string $password): array
+        /**
+     * Méthode qui vérifie si un user existe en BDD avec son email
+     * @param email string email de l'utilisateur
+     * @return array retourne le tableau de l'utilisateur
+     */
+    function findUserByEmail(string $email,): array
     {
         try {
             //Ecrire la requête SQL
