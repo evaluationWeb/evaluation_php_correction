@@ -41,7 +41,7 @@ $books = findAllBook($idUser);
                 <th>Date de publication</th>
                 <th>Categorie</th>
             </thead>
-            <!-- Boucler sur le tableau de Category -->
+            <!-- Boucler sur le tableau de books -->
             <?php foreach ($books as $book): ?>
                 <tr>
                     <td><?= $book["title"] ?> </td>
